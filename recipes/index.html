@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parihar Dhaba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Recipe App</h1>
+            <form id="search-form">
+                <input class="searchBox" type="text" id="search" placeholder="Search for recipe">
+                <button class="submit" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="recipe-container" id="recipe-container">
+                <h2>Search your favourite recipe</h2>
+                <!-- Recipe cards will appear here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Scrollable Recipe Details Section -->
+    <div id="recipe-details" class="recipe-details">
+        <div id="recipe-header">
+            <button id="close-details">Close</button>
+        </div>
+        <div id="recipe-content">
+            <h2 id="recipe-title"></h2>
+            <h3>Ingredients:</h3>
+            <ul id="recipe-ingredients"></ul>
+            <h3>Instructions:</h3>
+            <ol id="recipe-instructions"></ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
